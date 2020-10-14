@@ -19,7 +19,7 @@ namespace TradeManager.Application.Trades.IntegrationHandlers
         {
             // do something here.
 
-            await _commandsScheduler.EnqueueAsync();
+           // await _commandsScheduler.EnqueueAsync();
         }
     }
 }

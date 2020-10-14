@@ -53,6 +53,8 @@ namespace TradeManager.Api.Trades
             try
             {
                 // invoke service to store trades using mediator
+
+                // we can remove and call directly the service to store objects but this could helpfull to understand domain events and notification logic
                 await _mediator.Send(new TradeManager.Application.Trades.CreateTrade.CreateTradeRequest(request.name, request.type, request.details, request.schemaId, request.portfolioId));
 
             }

@@ -26,6 +26,7 @@ namespace TradeManager.Api
             services.AddControllers();
 
             // to complete
+            // remove the context and register interfaces and relative concreate class if we wont use a mediator
             services.AddDbContext<UpsLightContext>();
 
         }
